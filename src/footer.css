@@ -1,0 +1,26 @@
+/* footer.css */
+
+/* Container for the footer */
+.footer-container {
+    background-color: #f0dbdb;
+    padding: 20px;
+    text-align: center;
+    color: #333; /* Text color */
+    width: 100%;
+    flex-shrink: 0;
+     /* Prevent footer from shrinking */
+  }
+  
+  /* Styling for the text inside the footer */
+  .footer-text {
+    font-size: 14px;
+  }
+  .footer-container {
+    background-color: #f0dbdb;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    width: 100%;
+  }
+  
+  

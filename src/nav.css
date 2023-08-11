@@ -1,0 +1,59 @@
+/* nav.css */
+.nav-container {
+  display: flex;
+  justify-content: center; /* Center the navigation container horizontally */
+  padding: 10px 0; /* Adjust padding as needed */
+  position: relative; /* Add relative positioning to enable z-index */
+  z-index: 2; /* Adjust the z-index value as needed */
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  width:fit-content; /* Set the width to fit the content (menu items) */
+ /* max-width: 800px;*/
+ 
+  background-color:rgb(252, 252, 252); /* Change background color to make the centered area stand out */
+  padding: 5px 10px; /* Add some padding to the centered area */
+  border-radius: 5px; /* Add rounded corners for a visual touch */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  
+  
+}
+
+.menu li {
+  display: inline;
+  
+  position: relative;
+}
+
+.menu li a {
+  text-decoration: none;
+  font-family: 'CustomFontName'; /* Apply the custom font to the menu items */
+  color: black;
+}
+
+/* Additional styling for the brand */
+.brand {
+  font-family: 'CustomFontName';
+}
+.menu li::after {
+  content: "";
+  display: block;
+  width: 20px; /* Adjust the width of the indicator */
+  height: 2px; /* Adjust the height of the indicator */
+  background-color: transparent; /* Set the initial color of the indicator */
+  position: absolute;
+  bottom: -8px; /* Adjust the distance of the indicator from the menu item */
+  left: 50%; /* Center the indicator horizontally */
+  transform: translateX(-50%);
+  transition: background-color 0.3s ease-in-out; /* Add a transition for smooth color change */
+}
+
+.menu li.active::after {
+  background-color: rgb(224, 60, 60); /* Set the color for the active indicator */
+}
+

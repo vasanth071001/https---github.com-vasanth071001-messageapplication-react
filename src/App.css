@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  position: relative;
 }
 
 .App-logo {
@@ -36,3 +37,55 @@
     transform: rotate(360deg);
   }
 }
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden; /* Prevent content from overflowing viewport */
+}
+
+.main-content {
+  flex-grow: 1; /* Allow content to grow and fill available space */
+  overflow-y: auto; /* Add scrollbar when content overflows */
+}
+.content-container {
+  position: relative;
+  z-index: 1;
+}
+/* App.css */
+/* ... */
+
+/* App.css */
+/* .video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 86.6%;
+  background-color: rgba(148, 0, 211, 0.6);
+  z-index: 0;
+}
+
+ */
